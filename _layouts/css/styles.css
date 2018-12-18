@@ -1,0 +1,453 @@
+:root{
+
+    --about-size:7;
+}
+@import url('https://fonts.google.com/specimen/Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@keyframes slidein{
+
+   from{
+       transform:translateX(20rem);
+       
+   }
+   to {
+       transfor:translateX(0);
+       
+   }
+
+}
+body{
+   font-family: "Open sans", sans-serif;
+   padding: 0;
+   margin: 0;
+}
+div{
+   height: 10vh;
+   background:white;
+   text-align:center;
+   vertical-align: text-bottom;
+   font-size: 1.8rem;
+   
+}
+article{
+   position: fixed;
+   top: 0;left: 0; right: 0;
+   background: white;
+   text-align: center;
+   align-items: center;
+   height: 20vh;
+}
+header{
+   font-family: 'PT Serif', serif;
+   height: 10vh;
+   
+   
+}
+h1{
+   text-align: center;
+   height: 5vh;
+}
+h1 img{
+   height: 5vh;
+   width: 5vh;
+}
+header {
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+
+section{
+   padding-top: 20vh;
+}
+
+header nav ul {
+   display: flex;
+}
+
+header nav ul li {
+   display: block;
+   padding: 0 0.25rem;
+}
+
+header nav ul li a {
+   display: block;
+   padding: 0.5em 0.1rem;
+   text-decoration: none;
+   color: #090;
+   
+   border-radius: 0.2rem;
+   box-shadow: 0 0 5rem 0.1rem rgba(3, 100, 0, 0.15);
+}
+
+a:focus,
+a:hover {
+   outline: none;
+   background: #090;
+   color: #FFF;
+   transform: translateY(-0.25rem);
+   cursor: pointer;
+  
+}
+section{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+   gap: 2px;
+           
+}
+
+
+#logo{
+   background: url('logo2.png');
+   background-size: 100% 100%;
+   height: 30vh;
+   grid-row-start: 1;
+   grid-row-end: 5;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   animation: slidein 1s ease;
+   
+}
+#front1{
+   background: url('front1.jpg');
+   background-size: 100% 100%;
+   height: 40vh;
+   grid-row-start: 1;
+   grid-row-end: 5;
+   grid-column-start: 3;
+   grid-column-end: -1;
+   animation: slidein 1s ease 2s;
+}
+#logo2{
+   background: url('logo.png');
+   background-size: 100% 100%;
+   height: 30vh;
+   grid-row-start: 5;
+   grid-row-end: 9;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   animation: slidein 2s ease;
+   
+}
+#front2{
+   background: url('front2.jpg');
+   background-size: 100% 100%;
+   height: 40vh;
+   grid-row-start: 5;
+   grid-row-end: 9;
+   grid-column-start: 3;
+   grid-column-end: -1;
+   animation: slidein 2s ease 2s;
+}
+#detail1{
+   grid-column-start: 1;
+   grid-column-end: -1;
+   font-size: 12px;
+}
+#location1{
+   background: url('location1.png');
+   background-size: 100% 100%;
+   height: 30vh;
+   grid-row-start: 2;
+   grid-row-end: 5;
+   grid-column-start: 1;
+   grid-column-end: 5;
+   
+}
+#detail2{
+   grid-column-start: 1;
+   grid-column-end: 6;
+   grid-row-start: 6;
+   grid-row-end: 6;
+   font-size: 12px;
+   text-align: right;
+}
+#location2{
+   background: url('location2.png');
+   background-size: 100% 100%;
+   height: 60vh;
+   grid-row-start: 3;
+   grid-row-end: 9;
+   grid-column-start: 6;
+   grid-column-end: -1;
+   
+}
+
+
+.info1{
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 1;
+   grid-column-end: -1;
+}
+
+#in1{
+   background: url('in1.jpg');
+   height: 70vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start: 5;
+   grid-column-end: 8;
+}
+#in2{
+   background: url('in2.jpg');
+   height: 70vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start:5;
+   grid-column-end: 8;
+}
+#main1{
+   background: url('main1.jpg');
+   height: 70vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start: 1;
+   grid-column-end: 4;
+
+}
+#main2{
+   background: url('main2.jpg');
+   height: 70vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+#ainfo{
+
+   height: 10vh;
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   
+}
+#binfo{
+
+   height: 10vh;
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 5;
+   grid-column-end: 8;
+   
+}
+#cinfo{
+
+   height: 10vh;
+   grid-row-start: 5;
+   grid-row-end: 5;
+   grid-column-start: 2;
+   grid-column-end: 7;
+   
+}
+#alogo{
+   background: url('Bayer.png');
+   height: 30vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 5;
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+#blogo{
+   background: url('Nivea_Logo.png');
+   height: 30vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 5;
+   grid-column-start:5;
+   grid-column-end: 8;
+}
+#clogo{
+   background: url('nowSoirts.jpg');
+   height: 30vh;
+   background-size: 100% 100%;
+   grid-row-start: 6;
+   grid-row-end: 9;
+   grid-column-start:2;
+   grid-column-end: 7;
+}
+section p{
+   padding:2px;
+   margin: 0;
+   font-size: 12px;
+}
+:root{
+
+   --about-size:-1;
+}
+@media screen and (max-width: 500px) {
+   section{
+       padding-top: 30vh;
+       display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+   }
+     article{
+       height: 30vh;
+   }
+     header{
+      height: 20vh;
+      font-size: 12px;
+  }
+  h1{
+      height: 10vh;
+  }
+  #logo{
+ 
+     background-size: 100% 100%;
+     height: 30vh;
+     grid-row-start: 1;
+     grid-row-end: 4;
+     grid-column-start: 1;
+     grid-column-end: 3;
+    
+     
+ }
+ #front1{
+ 
+     background-size: 100% 100%;
+     height: 30vh;
+     grid-row-start: 1;
+     grid-row-end: 6;
+     grid-column-start: 3;
+     grid-column-end: -1;
+    
+ }
+ #logo2{
+ 
+     background-size: 100% 100%;
+     height: 30vh;
+     grid-row-start: 5;
+     grid-row-end: 9;
+     grid-column-start: 1;
+     grid-column-end: 3;
+    
+     
+ }
+ #front2{
+     
+     background-size: 100% 100%;
+     height: 30vh;
+     grid-row-start: 5;
+     grid-row-end: 9;
+     grid-column-start: 3;
+     grid-column-end: -1;
+     
+ }
+ #detail1{
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+ #location2{
+   background: url('location2.png');
+   background-size: 100% 100%;
+   height: 50vh;
+   grid-row-start: 3;
+   grid-row-end: 8;
+   grid-column-start: 6;
+   grid-column-end: -1;
+   
+}
+
+#in1{
+   background: url('in1.jpg');
+   height: 60vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start: 6;
+   grid-column-end: var(--about-size);
+}
+#in2{
+   background: url('in2.jpg');
+   height: 60vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start:6;
+   grid-column-end: -1;
+}
+#main1{
+   background: url('main1.jpg');
+   height: 60vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start: 1;
+   grid-column-end: 5;
+
+}
+#main2{
+   background: url('main2.jpg');
+   height: 60vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 7;
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+#ainfo{
+
+   height: 10vh;
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 1;
+   grid-column-end: 5;
+   
+}
+#binfo{
+
+   height: 10vh;
+   grid-row-start: 1;
+   grid-row-end: 1;
+   grid-column-start: 5;
+   grid-column-end: 9;
+   
+}
+#cinfo{
+
+   height: 10vh;
+   grid-row-start: 5;
+   grid-row-end: 5;
+   grid-column-start: 2;
+   grid-column-end: 8;
+   
+}
+#alogo{
+   background: url('Bayer.png');
+   height: 30vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 5;
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+#blogo{
+   background: url('Nivea_Logo.png');
+   height: 30vh;
+   background-size: 100% 100%;
+   grid-row-start: 2;
+   grid-row-end: 5;
+   grid-column-start:5;
+   grid-column-end: 9;
+}
+#clogo{
+   background: url('nowSoirts.jpg');
+   height: 20vh;
+   background-size: 100% 100%;
+   grid-row-start: 6;
+   grid-row-end: 8;
+   grid-column-start:2;
+   grid-column-end: 8;
+}
+ }
